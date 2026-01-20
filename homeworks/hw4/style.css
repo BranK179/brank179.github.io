@@ -1,6 +1,8 @@
 #bg {
-    overflow: hidden;
+    background-image: url("img2.jpg");
+    background-position: center center;
     position: absolute;
+    overflow: hidden;
     width: 1920px;
     height: 1080px;
     z-index: -1;
@@ -33,6 +35,7 @@ p {
     font-style: normal;
     text-align: center;
     line-height: 20px;
+    color: #002464;
 }
 
 p#t1 {
@@ -44,6 +47,7 @@ p#name {
     font-weight: 400;
     font-size: 70px;
     letter-spacing: 2px;
+    color: #fc365f;
 }
 
 p.description {
@@ -51,6 +55,7 @@ p.description {
     margin: auto;
     line-height: 45px;
 }
+
 p.shantell-sans {
     font-family: "Shantell Sans", cursive;
     font-optical-sizing: auto;
@@ -60,4 +65,5 @@ p.shantell-sans {
     font-size: 50px;
     letter-spacing: 3px;
     line-height: 40px;
+    color: #e75f44;
 }
