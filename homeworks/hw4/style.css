@@ -1,0 +1,5 @@
+#letterblock {
+    background-image: url("img.jpg");
+    background-size: contain;
+    height: 100vw;
+}
