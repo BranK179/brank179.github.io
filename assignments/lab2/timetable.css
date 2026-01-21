@@ -1,0 +1,32 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+table, th, td {
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    border: 1.5px solid;
+    text-align: center;
+    vertical-align: center;
+    padding: 5px;
+    width: 12%;
+}
+
+#title {
+    border: none;
+}
+
+.sessions {
+    width: 4%;
+    transform: rotate(-90deg);
+}
+
+th:nth-child(even) {
+    background-color: #87CEEB;
+}

@@ -1,0 +1,49 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+table, th, td {
+    border: 1.5px solid;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+th, td {
+    padding: 5px;
+}
+
+td {
+    text-align: center;
+    vertical-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #B0C4DE;
+}
+
+.vietjet {
+    width: 120px;
+    height: 30px;
+}
+
+.bamboo {
+    width: 100px;
+    height: 30px;
+}
+
+.pacific {
+    width: 130px;
+    height: 30px;
+}
+
+.vietnam {
+    width: 145px;
+    height: 20px;
+}
+
+.vasco {
+    width: 120px;
+    height: 27px;
+}
