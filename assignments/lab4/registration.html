@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang=vi-VN>
+    <head>
+        <title>Đăng ký học phần</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Nguyễn Hưng Vỹ">
+        <meta name="description" content="Thiết kế web">
+        <meta name="keywords" content="20CT2101, Thiết kế web, Khoa Sư Phạm Tin học, Trường Đại học Đà Lạt">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://online.dlu.edu.vn/static/media/DLU%20Logo%20full.7c6be098.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <form method="post" action="registration.php">
+            <table border="2" cellspacing="5px">
+                <tr>
+                    <th colspan="2">Phiếu đăng ký học phần</th>
+                </tr>
+                <tr>
+                    <td class="td150 requỉred">Nhập họ và tên</td>
+                    <td><input type="text" name="fullname" required></td>
+                </tr>
+                <tr>
+                    <td class="required">Nhập mã số sinh viên</td>
+                    <td><input type="text" name="id" required></td>
+                </tr>
+                <tr>
+                    <td class="required">Chọn lớp</td>
+                    <td>
+                        <select name="class">
+                            <option>CTK46A</option>
+                            <option>CTK46B</option>
+                            <option>CTK47A</option>
+                            <option>CTK47B</option>
+                            <option>CTK47C</option>
+                            <option>CTK48A</option>
+                            <option>CTK48B</option>
+                            <option>THK46SP</option>
+                            <option>THK47SP</option>
+                            <option>THK48SP</option>
+                        </select>
+                    </td>
+                </tr>
+                    <td class="required">Chọn học phần</td>
+                    <td>
+                        <table class="sub-table clearfix"">
+                            <tr>
+                                <td><input type="checkbox" name="LC1102D">Kinh tế Chính trị Mác - Lênin (LC1102D)</td>
+                                <td><input type="checkbox" name="20TN1202">Toán rời rạc (20TN1202)</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="20TN1201">Toán cao cấp B1 (20TN1201)</td>
+                                <td><input type="checkbox" name="20CT1202">Nguyên lý lập trình hướng đối tượng (20TN1201)</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="TC1004D">Giáo dục thể chất 2 - Bóng đá (TC1004D)</td>
+                                <td><input type="checkbox" name="TC1002D">Giáo dục thể chất 2 - Cầu lông (TC1002D)</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="required">Xác nhận</td>
+                    <td>
+                        <input type="radio" id="confirm">
+                        <label for="confirm">Tôi chịu trách nhiệm về kết quả đăng ký các học phần này</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="center" colspan="2">
+                        <input type="reset" value="Nhập lại" class="btn-reset">
+                        <input type="submit" value="Đăng ký" class="btn-submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

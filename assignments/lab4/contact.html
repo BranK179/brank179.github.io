@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang=vi-VN>
+    <head>
+        <title>Liên hệ</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Nguyễn Hưng Vỹ">
+        <meta name="description" content="Thiết kế web">
+        <meta name="keywords" content="20CT2101, Thiết kế web, Khoa Sư Phạm Tin học, Trường Đại học Đà Lạt">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="https://online.dlu.edu.vn/static/media/DLU%20Logo%20full.7c6be098.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <form method="post" action="contact.php">
+            <table border="2" cellspacing="5px">
+                <tr>
+                    <th colspan="2">Liên hệ với chúng tôi</th>
+                </tr>
+                <tr>
+                    <td class="td150 required">Nhập họ và tên</td>
+                    <td><input type="text" name="fullname" required></td>
+                </tr>
+                <tr>
+                    <td class="required">Nhập địa chỉ email</td>
+                    <td><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td class="required">Nhập số điện thoại</td>
+                    <td><input type="text" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td>Nhập địa chỉ</td>
+                    <td><input type="text" name="address"></td>
+                </tr>
+                <tr>
+                    <td class="required">Chọn chủ đề</td>
+                    <td>
+                        <select name="topic" required>
+                            <option>Hỏi đáp</option>
+                            <option>Góp ý</option>
+                            <option>Khiếu nại</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="required">Nhập nội dung</td>
+                    <td><textarea rows="10" name="content" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="center">
+                        <input type="reset" value="Nhập lại" class="btn-reset">
+                        <input type="submit" value="Gửi" class="btn-submit">
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
