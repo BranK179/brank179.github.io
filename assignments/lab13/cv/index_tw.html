@@ -4,81 +4,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nguyễn Hưng Vỹ | CV Online</title>
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <button type="button" class="toggle-dark"></button>
 
-    <div id="pdf-content">
+<body class="flex justify-center content-center">
+    <!-- outer container -->
+    <div class="border border-gray-300 rounded-sm shadow-lg py-10 px-10 w-4/5 mt-10 mb-10"">
+        <!-- header (profile) -->
         <header>
-            <div class="avatar-wrapper">
-                <img src="img/avatar.jpg" alt="Avatar" class="avatar">
-            </div>
-            <h1>Nguyễn Hưng Vỹ</h1>
-            <p>Programmer - Lecturer</p>
+           
+                <div class="grid justify-items-start">
+                    <h1 class="text-7xl font-extrabold">Nguyễn Hưng Vỹ</h1>
+                    <p class="text-xl mt-5">Programmer - Lecturer</p>
+                </div>
+            
         </header>
-
-        <nav>
-            <a href="#about">Giới thiệu</a>
-            <a href="#skills">Kỹ năng</a>
-            <a href="#experience">Kinh nghiệm</a>
-            <a href="#projects">Dự án</a>
-            <a href="#contact">Liên hệ</a>
-        </nav>
-
-        <main>
-            <section id="about" class="card">
-                <h2>Giới thiệu</h2>
-                <p>
-                    Tôi là Nguyễn Hưng Vỹ, sinh ngày 11/12/2006, dự kiến tốt nghiệp ngành Sư phạm tin học, Trường Đại học Đà Lạt vào tháng 5 năm 2028.
-                </p>
-            </section>
-
-            <section id="skills" class="card skills">
-                <h2>Kỹ năng</h2>
-                <span>Data Analysis</span>
-                <span>OOP</span>
-                <span>Back-end Developer</span>
-                <span>Web Design</span>
-		<span>Teaching</span>
-            </section>
-
-            <section id="experience" class="card">
-                <h2>Kinh nghiệm</h2>
-                <ul>
-                    <li><strong>Thực tập</strong> - Công ty Intel International (02/2028 - 05/2028)</li>
-                    <li><strong>Data Analysis Developer Freelance</strong> (08/2027 - 02/2028)</li>
+        <!-- detailed info -->
+        <main class="flex gap-x-10 mt-10">
+            <div class="w-2/6">
+                <!-- contact details -->
+                <strong class="text-xl font-medium">Contact Details</strong>
+                <ul class="mt-2 mb-10">
+                    <li class="px-2 mt-1"><strong class="mr-1">Phone </strong>
+                        <a href="tel:+821023456789" class="block">1234 567 890</a>
+                    </li>
+                    <li class="px-2 mt-1"><strong class="mr-1">E-mail </strong>
+                        <a href="mailto:" class="block">2410292@dlu.edu.vn</a>
+                    </li>
+                    <li class="px-2 mt-1"><strong class="mr-1">Location</strong><span class="block">Lâm Đồng - Việt Nam</span></li>
                 </ul>
-            </section>
 
-            <section id="projects" class="card">
-                <h2>Dự án nổi bật</h2>
-                <ul>
-                    <li><strong>Learning Management System Website</strong> - Trường THPt Hùng Vương</li>
-                    <li><strong>Website bán hàng</strong> - Trung tâm mua sắm Star</li>
-                    <li><strong>Nhận diện bìa sách</strong> - Hệ thống tra cứu tài liệu</li>
+                <!-- github stats -->
+                <strong class="text-xl font-medium ">Github Stats</strong>
+                <ul class="flex w-full mt-2 mb-10">
+                    <li class="px-2 mt-2 w-4/12 bg-pink-600 text-white text-center rounded-tl-lg rounded-bl-lg">HTML
+                    </li>
+                    <li class="px-2 mt-2 w-4/12 bg-blue-600 text-white text-center">CSS</li>
+                    <li class="px-2 mt-2 w-5/12 bg-yellow-500 text-white text-center rounded-tr-lg rounded-br-lg">JS
+                    </li>
+
                 </ul>
-            </section>
+                <!-- skills -->
+                <strong class="text-xl font-medium">Skills</strong>
+                <ul class="mt-2 mb-10">
+                    <li class="px-2 mt-1">HTML</li>
+                    <li class="px-2 mt-1">CSS</li>
+                    <li class="px-2 mt-1">JavaScript</li>
+                    <li class="px-2 mt-1">React</li>
+                    <li class="px-2 mt-1">Node.js</li>
+                </ul>
+                <strong class="text-xl font-medium">Further Education</strong>
+                <ul class="mt-2 mb-10">
+                    <li class="px-2 mt-1">DLU</li>
+                    <li class="px-2 mt-1">Udemy</li>
+                    <li class="px-2 mt-1">Freecodecamp</li>
+                </ul>
+                </ul>
+                <!-- what I'm learning these days -->
+                <strong class="text-xl font-medium">Currently learning</strong>
+                <ul class="mt-2 mb-10">
+                    <li class="px-2 mt-1">About Web Accessibility</li>
+                    <li class="px-2 mt-1">and User Experience</li>
+                </ul>
+                <strong class="text-xl font-medium">Interests & Hobbies</strong>
+                <ul class="mt-2">
+                    <li class="px-2 mt-1">Gaming</li>
+                    <li class="px-2 mt-1">New technologies</li>
+                    <li class="px-2 mt-1">Listen to music</li>
+                    <li class="px-2 mt-1">Factorio</li>
+                    <li class="px-2 mt-1">Sleep</li>
+                </ul>
+            </div>
+            <!-- info -->
+            <div class="w-4/6">
+                <section>
+                    <!-- about me -->
+                    <h2 class="text-2xl pb-1 border-b font-semibold">About</h2>
+                    <p class="mt-4 text-xs">Tôi là Nguyễn Hưng Vỹ, sinh ngày 11/12/2006, dự kiến tốt nghiệp chuyên ngành Sư phạm Tin Học, Trường Đại học Đà Lạt vào tháng 5 năm 2028. </p>
 
-            <section id="contact" class="card">
-                <h2>Liên hệ</h2>
-                <p>Email: 2410292@dlu.edu.vn</p>
-                <p>Điện thoại: 1234 567 890</p>
-                <p>LinkedIn: 
-                    <a href="https://linkedin.com/in/nguyenhungvy" target="_blank">linkedin.com/in/nguyenhungvy</a>
-                </p>
-            </section>
+                </section>
+                <section>
+                    <!-- projects -->
+                    <h2 class="text-2xl mt-6 pb-1 border-b font-semibold">Projects</h2>
+                    <ul class="mt-1">
+                        <li class="py-2">
+                            <div class="flex justify-between my-1">
+                                <strong>Hệ thống Quản lý Thư viện</strong>
+                                <p class="flex">
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">HTML</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">CSS</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">JS</span>
+                                </p>
+                            </div>
+                            <ul class="flex mb-2">
+                                <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Live</a>
+                                </li>
+                                <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Code</a>
+                                </li>
+                            </ul>
+                            <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+                                Xây dựng một ứng dụng web cho phép quản lý danh mục sách, theo dõi quá trình mượn và trả của sinh viên. Hệ thống tích hợp tính năng tìm kiếm thông minh, lọc sách theo thể loại và tự động tính toán ngày quá hạn. Giao diện được thiết kế tối giản, dễ sử dụng, tập trung vào trải nghiệm người dùng cuối.</p>
+                        </li>
+                        <li class="py-2">
+                            <div class="flex justify-between my-1">
+                                <strong>Ứng dụng Thời tiết Real-time</strong>
+                                <p class="flex">
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">HTML</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">CSS</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">JS</span>
+                                </p>
+                            </div>
+                            <ul class="flex mb-2">
+                                <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Live</a>
+                                </li>
+                                <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Code</a>
+                                </li>
+                            </ul>
+                            <p class="text-xs">Ứng dụng sử dụng OpenWeatherMap API để cung cấp thông tin thời tiết chính xác tại vị trí hiện tại của người dùng. Các tính năng nổi bật bao gồm dự báo thời tiết trong 7 ngày tới, hiển thị độ ẩm, tốc độ gió và chỉ số UV. Giao diện thay đổi màu sắc linh hoạt dựa trên tình trạng thời tiết thực tế (nắng, mưa, mây mù).
+                            </p>
+                        </li>
+                        <li class="py-2">
+                            <div class="flex justify-between my-1">
+                                <strong>Website Bán hàng Đồ gia dụng</strong>
+                                <p class="flex">
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">HTML</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">CSS</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">React</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">Node.js</span>
+                                </p>
+                            </div>
+                            <ul class="flex mb-2">
+                                <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Live</a>
+                                </li>
+                                <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Code</a>
+                                </li>
+                            </ul>
+                            <p class="text-xs">Phát triển nền tảng thương mại điện tử đầy đủ tính năng bao gồm giỏ hàng, thanh toán trực tuyến và quản lý đơn hàng. Website được tối ưu hóa SEO và có khả năng hiển thị tương thích (responsive) trên nhiều thiết bị từ mobile đến desktop. Hệ thống quản trị (Admin Dashboard) cho phép chủ cửa hàng cập nhật sản phẩm và theo dõi doanh thu theo thời gian thực.</p>
+                        </li>
+                        <li class="py-2">
+                            <div class="flex justify-between my-1">
+                                <strong>Landing Page Portfolio Cá nhân</strong>
+                                <p class="flex">
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">HTML</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">CSS</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">React</span>
+                                    <span class="bg-gray-600 text-white px-2 py-1 ml-1 text-xs rounded">Node.js</span>
+                                </p>
+                            </div>
+                            <ul class="flex mb-2">
+                                <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Live</a>
+                                </li>
+                                <li><a href="#" class="bg-blue-600 text-white px-2 py-1 mr-1 text-sm rounded">Code</a>
+                                </li>
+                            </ul>
+                            <p class="text-xs">Thiết kế và triển khai trang web cá nhân nhằm giới thiệu kỹ năng, kinh nghiệm và các sản phẩm đã hoàn thiện. Sử dụng các kỹ thuật animation hiện đại để tạo hiệu ứng cuộn trang mượt mà. Trang web tích hợp form liên hệ trực tiếp qua EmailJS và hệ thống xuất file CV dưới dạng PDF tự động.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <!-- work experiences -->
+                    <h2 class="text-2xl mt-6 pb-1 border-b font-semibold">Work Experiences</h2>
+                    <ul class="mt-2">
+                        <li class="pt-2">
+                            <p class="flex justify-between text-sm"><strong class="text-base">FPT Software</strong>02/2025 - Hiện tại</p>
+                            <p class="flex justify-between text-base">Thực tập sinh Full-stack Developer<small>Đà Nẵng, Việt Nam</small></p>
+                            <p class="text-justify text-xs">Tham gia phát triển các tính năng phía người dùng cho hệ thống quản lý nội bộ. Phối hợp với đội ngũ Backend để tích hợp API và tối ưu hóa hiệu suất ứng dụng. Học hỏi quy trình làm việc chuyên nghiệp theo mô hình Agile/Scrum và sử dụng các công cụ quản lý mã nguồn như Git.
+                            </p>
+                        </li>
+                        <li class="pt-2">
+                            <p class="flex justify-between text-sm"><strong class="text-base">Freelance Web Developer</strong>2024 - 2025</p>
+                            <p class="flex justify-between text-base">Lập trình viên tự do<small>Từ xa (Remote)</small></p>
+                            <p class="text-justify text-xs">Thiết kế và triển khai các trang web giới thiệu doanh nghiệp (Landing Page) cho các khách hàng vừa và nhỏ. Đảm bảo tính tương thích của giao diện trên mọi thiết bị và tối ưu tốc độ tải trang. Tư vấn giải pháp kỹ thuật và hỗ trợ bảo trì hệ thống sau khi bàn giao.
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <!-- education -->
+                    <h2 class="text-2xl mt-6 pb-1 border-b font-semibold">Education</h2>
+                    <ul class="mt-2">
+                        <li class="pt-2">
+                            <p class="flex justify-between text-sm"><strong class="text-base">Đại học Đà Lạt</strong>2024 - 2028</p>
+                            <p class="flex justify-between text-sm">Sư Phạm Tin Học<small>GPA 3.6/4.0</small></p>
+                        </li>
+                        <li class="pt-2">
+                            <p class="flex justify-between text-sm"><strong class="text-base">FreeCodeCamp / Udemy</strong>2028 - 2029</p>
+                            <p class="flex justify-between text-sm">Chứng chỉ Web Responsive & JavaScript Algorithms<small>Hoàn thành</small></p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
         </main>
-
-        <footer>
-            <p>&copy; 2028 Nguyễn Hưng Vỹ. Mọi quyền được bảo lưu.</p>
-        </footer>
     </div>
-
-    <button type="button" class="btn-export" onclick="exportPDF()">Xuất PDF</button>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
